@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
   res.send("Express on Vercel");
 });
 app.get("/test", (req, res) => {
-  res.json({message:"Hi supratim"});
+  res.json({message:"Hi supratim1"});
 });
 
 app.listen(5000, () => {
