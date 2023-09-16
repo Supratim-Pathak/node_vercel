@@ -2,6 +2,13 @@ const express = require("express");
 
 const app = express();
 
+var corsOptions = {
+  origin: "*"
+};
+
+const cors = require("cors");
+app.use(cors(corsOptions));
+
 app.get("/", (req, res) => {
   res.send("Express on Vercel");
 });
