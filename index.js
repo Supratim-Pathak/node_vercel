@@ -6,7 +6,7 @@ app.get("/", (req, res) => {
   res.send("Express on Vercel");
 });
 app.get("/test", (req, res) => {
-  res.send("Hi supratim");
+  res.json({message:"Hi supratim"});
 });
 
 app.listen(5000, () => {
