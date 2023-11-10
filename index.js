@@ -1,4 +1,5 @@
 const express = require("express");
+const fil = require("./f");
 
 const app = express();
 
@@ -12,9 +13,7 @@ app.use(function (req, res, next) {
 app.get("/", (req, res) => {
   res.send("Express on Vercel");
 });
-app.get("/test", (req, res) => {
-  res.json({message:"Hi supratim1"});
-});
+app.get("/test", fil.test);
 
 app.listen(5000, () => {
   console.log("Running on port 5000.");
